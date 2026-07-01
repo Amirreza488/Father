@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Tahoma,sans-serif;
+
+    background:linear-gradient(-45deg,#0f172a,#1e3a8a,#2563eb,#0f172a);
+
+    background-size:400% 400%;
+
+    animation:bg 12s ease infinite;
+
+    color:white;
+
+    text-align:center;
+
+    min-height:100vh;
+
+}
+
+@keyframes bg{
+
+    0%{background-position:0% 50%;}
+
+    50%{background-position:100% 50%;}
+
+    100%{background-position:0% 50%;}
+
+}
+
+header{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+    animation:fade 1.5s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+img{
+
+width:220px;
+
+height:220px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:6px solid white;
+
+box-shadow:0 0 40px rgba(255,255,255,.5);
+
+transition:.5s;
+
+}
+
+img:hover{
+
+transform:scale(1.08) rotate(2deg);
+
+box-shadow:0 0 80px white;
+
+}
+
+h1{
+
+font-size:48px;
+
+margin-top:20px;
+
+margin-bottom:20px;
+
+animation:float 3s infinite;
+
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+
+50%{transform:translateY(-8px);}
+
+100%{transform:translateY(0);}
+
+}
+
+.subtitle{
+
+font-size:22px;
+
+opacity:.9;
+
+line-height:2;
+
+}
+
+main{
+
+width:90%;
+
+max-width:900px;
+
+margin:40px auto;
+
+}
+
+section{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(12px);
+
+border-radius:25px;
+
+padding:35px;
+
+margin-bottom:30px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+transition:.4s;
+
+}
+
+section:hover{
+
+transform:translateY(-8px);
+
+}
+
+h2{
+
+margin-bottom:20px;
+
+color:#FFD54F;
+
+font-size:32px;
+
+}
+
+p{
+
+font-size:20px;
+
+line-height:2;
+
+}
+
+button{
+
+margin-top:20px;
+
+padding:18px 40px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:#FFD54F;
+
+color:#111;
+
+font-weight:bold;
+
+transition:.4s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 30px gold;
+
+}
+
+#message{
+
+margin-top:30px;
+
+font-size:28px;
+
+color:#FFD54F;
+
+font-weight:bold;
+
+}
+
+footer{
+
+margin-top:60px;
+
+padding:30px;
+
+font-size:18px;
+
+opacity:.8;
+
+}
